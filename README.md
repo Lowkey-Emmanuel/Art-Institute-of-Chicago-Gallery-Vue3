@@ -22,3 +22,4 @@ Le but de ce test sera de produit un application web qui gère la liste des oeuv
 ### Difficultés & Obesrvations
 
     -  Prise en main Vue js & concepts assez fluide mais a pris plus de temps que prevu (1er contact avec techno Vue JS)
+
