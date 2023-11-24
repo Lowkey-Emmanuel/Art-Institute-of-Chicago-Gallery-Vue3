@@ -1,15 +1,16 @@
 <template>
-  <main class="main">
-    
+  <main>
+    <slot></slot>
   </main>
 </template>
 
 <style lang="scss">
 @import '@/assets/scss/_base.scss';
 
-.main {
+main {
   flex: 1;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

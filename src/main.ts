@@ -1,8 +1,8 @@
-import './assets/scss/main.scss'
-
 import { createApp } from 'vue'
-import App from './App.vue'
 import { router } from './router'
+import App from './App.vue'
+
+import './assets/scss/main.scss'
 
 /*App create & mount */
 const app = createApp(App)
