@@ -3,15 +3,13 @@
 /*body default*/
 
 body {
-  color: var(--color-text);
-  background: var(--clr-bg);
+  color: var(--clr-white);
+  background: var(--clr-brand-100);
   font-family: var(--ff-base);
-  font-size: 15px;
 }
 
 #app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
 }

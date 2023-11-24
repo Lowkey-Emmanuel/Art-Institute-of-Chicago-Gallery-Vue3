@@ -2,8 +2,9 @@
   /*Color vars*/
   --clr-brand: #b20937;
   --clr-black: #000000;
+  --clr-white: #fff2f5;
 
-  --clr-brand-100: #fff2f5;
+  --clr-brand-100: #ffdae3;
   --clr-brand-200: #f1b5c5;
   --clr-brand-300: #e5678a;
   --clr-brand-400: #d92b5b;
@@ -16,7 +17,6 @@
   /*Font family vars*/
   --ff-base: 'Poppins';
   --ff-secondary: 'Inter';
-  --ff-nav: var(--ff-base);
 
   /**/
   --clr-bg: var(--clr-brand-200);
@@ -65,6 +65,7 @@ html {
 
 body {
   height: 100%;
+  font-size: 14px;
   overflow: hidden;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
@@ -85,8 +86,8 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 /* Natural flow and rhythm in articles by default */

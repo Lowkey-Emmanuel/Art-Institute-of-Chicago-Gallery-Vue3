@@ -1,26 +1,49 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MainComponent from '@/components/MainComponent.vue'
+import CardComponent from '@/components/CardComponent.vue'
+</script>
 
 <template>
-  <div class="gallery">
-    <div class="gallery__nav">
-      <div class="gallery__form">
-        <form class="gallery__form--input">
-          <input type="text" placeholder="Rechercher..." />
-        </form>
-      </div>
-      <div class="gallery__form--pagination">paginating...</div>
-    </div>
-    <section class="gallery__grid"></section>
-  </div>
+  <MainComponent>
+    <section class="gallery">
+      <section class="gallery__nav">
+        <div class="gallery__form">
+          <form class="gallery__form--input">
+            <input type="text" placeholder="&#61442; Rechercher ..." />
+          </form>
+        </div>
+        <div class="gallery__form--pagination">paginating...</div>
+      </section>
+      <section class="gallery__grid">
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+        <CardComponent />
+      </section>
+    </section>
+  </MainComponent>
 </template>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/_base.scss';
 
+main {
+  align-items: start;
+}
+
 .gallery {
-  flex: 1;
-  margin-inline: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-inline: 8em;
   margin-top: 2rem;
+
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -30,11 +53,25 @@
   &__form--input > input {
     width: 335px;
     height: 45px;
-    background-color: var(--clr-brand-100);
+    background-color: var(--clr-white);
+    color: #1a000782;
     padding-inline: 1em;
-
     border: var(--clr-brand-200) 1px solid;
     border-radius: 10px;
+
+    &:focus-visible {
+      box-shadow: 2px 4px 3px var(--clr-brand-200);
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: var(--ff-base), FontAwesome;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 1em;
   }
 }
 </style>

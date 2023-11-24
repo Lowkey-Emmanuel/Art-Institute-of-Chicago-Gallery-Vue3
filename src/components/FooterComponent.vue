@@ -12,7 +12,9 @@ import footerLogo from '@/assets/img/logo_black.jpg'
     <div class="footer-right">
       <ul class="footer__items">
         <li>
-          <a href="https://www.youtube.com/user/ArtInstituteChicago"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.youtube.com/user/ArtInstituteChicago"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
         </li>
         <li>
           <a href="https://twitter.com/artinstitutechi"><i class="fa-brands fa-twitter"></i></a>
@@ -36,9 +38,9 @@ import footerLogo from '@/assets/img/logo_black.jpg'
 .footer {
   width: 100%;
   height: 66px;
-  padding-inline: 8rem;
+  padding-inline: 8em;
   background-color: var(--clr-brand-900);
-  color: var(--clr-brand-100);
+  color: var(--clr-white);
 
   display: flex;
   justify-content: space-between;
@@ -60,10 +62,10 @@ import footerLogo from '@/assets/img/logo_black.jpg'
     aspect-ratio: 1/1;
 
     & > img {
-      color: var(--clr-brand-100);
+      color: var(--clr-white);
       max-width: 100%;
       display: block;
-      border: var(--clr-brand-100) 3px solid;
+      border: var(--clr-white) 3px solid;
     }
   }
 
@@ -85,10 +87,13 @@ import footerLogo from '@/assets/img/logo_black.jpg'
     text-decoration: none;
   }
 
+  &__items {
+    gap: 0.4em;
+  }
+
   .fa-brands {
     display: block;
-    font-size: 12px;
-    border: var(--clr-brand-100) 1px solid;
+    border: var(--clr-white) 1px solid;
     padding: 0.3em;
     border-radius: 8px;
     &:hover {

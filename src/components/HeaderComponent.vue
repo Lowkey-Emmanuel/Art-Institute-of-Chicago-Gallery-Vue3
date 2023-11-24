@@ -28,7 +28,7 @@ import mainLogo from '@/assets/img/logo_red.svg'
   height: 103px;
   padding-inline: 8em;
   background-color: var(--clr-brand-900);
-  color: var(--clr-brand-100);
+  color: var(--clr-white);
 
   display: flex;
   justify-content: space-between;
@@ -63,22 +63,22 @@ import mainLogo from '@/assets/img/logo_red.svg'
     & li > .active-link {
       position: relative;
       font-weight: 600;
-      border-bottom: var(--clr-brand-100) 3px solid;
+      border-bottom: var(--clr-white) 3px solid;
     }
   }
 
   & li > * {
     display: block;
-    color: var(--clr-brand-100);
+    color: var(--clr-white);
     text-decoration: none;
   }
 
   &__loginBtn {
     display: block;
     text-decoration: none;
-    padding: 1em;
+    padding: 0.5em;
     background-color: var(--clr-brand);
-    color: var(--clr-brand-100);
+    color: var(--clr-white);
     text-align: center;
     border: none;
     border-radius: 10px;
@@ -88,8 +88,9 @@ import mainLogo from '@/assets/img/logo_red.svg'
     }
 
     &:active {
+      transform: scale(1);
       font-weight: 600;
-      background-color: var(--clr-brand-100);
+      background-color: var(--clr-white);
       color: var(--clr-brand);
       border: var(--clr-brand-200) 1px solid;
     }
