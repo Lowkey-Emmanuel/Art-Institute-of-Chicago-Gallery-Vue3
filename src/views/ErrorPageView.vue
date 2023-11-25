@@ -18,24 +18,28 @@ import errorImg from '@/assets/img/svg_404_error.svg'
 <style lang="scss">
 @import '@/assets/scss/_base.scss';
 
-main {
-  justify-content: center;
-  column-gap: 2em;
-}
-
 .errorPage {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+
   &__msg {
     text-align: center;
-    font-size: 4rem;
+    font-size: 64px;
+    font-weight: 700;
     font-family: var(--ff-secondary);
     color: var(--clr-black);
   }
 
   &__btn {
-    display: block;
-    margin: 0 auto;
-    padding: 0.5em 2em;
+    width: 233px;
+    height: 44px;
+    padding: 10px;
     font-size: 1rem;
+    line-height: 24px;
     background-color: var(--clr-brand);
     color: var(--clr-white);
     text-decoration: none;
@@ -56,7 +60,7 @@ main {
   }
 
   &__img {
-    width: 826px;
+    width: 1024px;
     & > img {
       display: block;
       max-width: 100%;
