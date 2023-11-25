@@ -51,19 +51,19 @@ import mainLogo from '@/assets/img/logo_red.svg'
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 7.5em;
+    gap: 15em;
   }
 
   &__links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5em;
+    gap: 3em;
 
     & li > .active-link {
       position: relative;
       font-weight: 600;
-      border-bottom: var(--clr-white) 3px solid;
+      border-bottom: 4px var(--clr-white) solid;
     }
   }
 
