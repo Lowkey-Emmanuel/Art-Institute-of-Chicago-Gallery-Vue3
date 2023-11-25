@@ -12,7 +12,14 @@ import CardComponent from '@/components/CardComponent.vue'
             <input type="text" placeholder="&#61442; Rechercher ..." />
           </form>
         </div>
-        <div class="gallery__form--pagination">paginating...</div>
+        <div class="gallery__form--pagination">
+          <b-pagination
+            v-model="l"
+            :total-rows="0"
+            :per-page="1"
+            aria-controls="my-table"
+          ></b-pagination>
+        </div>
       </section>
       <section class="gallery__grid">
         <CardComponent />
@@ -40,6 +47,7 @@ main {
 .gallery {
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   gap: 2em;
   margin-inline: 8em;
   margin-top: 2rem;
