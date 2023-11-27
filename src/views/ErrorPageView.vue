@@ -62,8 +62,12 @@ import errorImg from '@/assets/img/svg_404_error.svg'
   }
 
   &__img {
+<<<<<<< HEAD
     min-height: 100%;
     
+=======
+    width: 1024px;
+>>>>>>> df87c20e382804fb37f90c030bc95c28ffffd909
     & > img {
       display: block;
       max-width: 100%;

@@ -13,6 +13,7 @@ import Illustation from '@/assets/img/svg-signup.svg'
     </div>
     <div class="right-section">
       <div class="right-section__wrapper">
+<<<<<<< HEAD
         <div class="right-section__header">
           <img class="right-section__logo" :src="Logo" alt="Logo image" />
           <h3 class="right-section__title">Create an account</h3>
@@ -31,6 +32,17 @@ import Illustation from '@/assets/img/svg-signup.svg'
             <input type="password" class="password" />
           </div>
           <div class="form-field"></div>
+=======
+        <img class="right-section__logo" :src="Logo" alt="Logo image" />
+        <h3 class="right-section__title">Create an account</h3>
+        <form class="right-section__form" action="">
+          <label for="name">Name</label>
+          <input type="name" class="name" />
+          <label for="email">Email</label>
+          <input type="email" class="email" />
+          <label for="password">Password</label>
+          <input type="password" class="password" />
+>>>>>>> df87c20e382804fb37f90c030bc95c28ffffd909
           <label for="password__confirmed">Confirm Password</label>
           <input type="password" class="password__confirmed" />
         </form>

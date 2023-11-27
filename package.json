@@ -12,7 +12,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^1.6.2",
+=======
+    "@popperjs/core": "^2.11.8",
+>>>>>>> df87c20e382804fb37f90c030bc95c28ffffd909
     "bootstrap": "^5.3.2",
     "pinia": "^2.1.7",
     "vue": "^3.3.8",
