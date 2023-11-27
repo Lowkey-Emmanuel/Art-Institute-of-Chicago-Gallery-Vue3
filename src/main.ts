@@ -5,6 +5,8 @@ import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 import './assets/scss/main.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
 
 /*App create & mount */
 const app = createApp(App)

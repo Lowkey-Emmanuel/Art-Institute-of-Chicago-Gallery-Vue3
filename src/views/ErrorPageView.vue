@@ -6,8 +6,10 @@ import errorImg from '@/assets/img/svg_404_error.svg'
 <template>
   <MainComponent>
     <section class="errorPage">
-      <h2 class="errorPage__msg">Sorry, page not found</h2>
-      <router-link to="/" class="errorPage__btn">Get back</router-link>
+      <div class="errorPage__header">
+        <h2 class="errorPage__msg">Sorry, page not found</h2>
+        <router-link to="/" class="errorPage__btn">Get back</router-link>
+      </div>
       <div class="errorPage__img">
         <img :src="errorImg" alt="404 error image" />
       </div>
@@ -60,7 +62,12 @@ import errorImg from '@/assets/img/svg_404_error.svg'
   }
 
   &__img {
+<<<<<<< HEAD
+    min-height: 100%;
+    
+=======
     width: 1024px;
+>>>>>>> df87c20e382804fb37f90c030bc95c28ffffd909
     & > img {
       display: block;
       max-width: 100%;
