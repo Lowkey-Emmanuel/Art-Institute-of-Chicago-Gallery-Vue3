@@ -13,15 +13,24 @@ import Illustation from '@/assets/img/svg-signup.svg'
     </div>
     <div class="right-section">
       <div class="right-section__wrapper">
-        <img class="right-section__logo" :src="Logo" alt="Logo image" />
-        <h3 class="right-section__title">Create an account</h3>
+        <div class="right-section__header">
+          <img class="right-section__logo" :src="Logo" alt="Logo image" />
+          <h3 class="right-section__title">Create an account</h3>
+        </div>
         <form class="right-section__form" action="">
-          <label for="name">Name</label>
-          <input type="name" class="name" />
-          <label for="email">Email</label>
-          <input type="email" class="email" />
-          <label for="password">Password</label>
-          <input type="password" class="password" />
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="name" class="name" />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" class="email" />
+          </div>
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input type="password" class="password" />
+          </div>
+          <div class="form-field"></div>
           <label for="password__confirmed">Confirm Password</label>
           <input type="password" class="password__confirmed" />
         </form>

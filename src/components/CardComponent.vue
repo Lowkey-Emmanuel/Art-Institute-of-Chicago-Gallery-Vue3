@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import cardImage from '@/assets/img/pxfuel.jpg'
+
+const props = defineProps<{
+  artInfos:[]
+}>()
 </script>
 
 <template>
