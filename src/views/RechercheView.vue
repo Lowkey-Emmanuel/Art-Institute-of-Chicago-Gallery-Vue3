@@ -29,13 +29,6 @@ const getData = async () => {
 console.log(artItems)
 */
 
-function mounted() {
-  throw new Error('Function not implemented.')
-}
-
-function Ref<T>(arg0: never[]) {
-  throw new Error('Function not implemented.')
-}
 </script>
 
 <template>
@@ -47,18 +40,6 @@ function Ref<T>(arg0: never[]) {
             <input type="text" placeholder="Rechercher ..." />
           </form>
         </div>
-<<<<<<< HEAD
-        <div class="gallery__form--pagination"></div>
-=======
-        <div class="gallery__form--pagination">
-          <b-pagination
-            v-model="l"
-            :total-rows="0"
-            :per-page="1"
-            aria-controls="my-table"
-          ></b-pagination>
-        </div>
->>>>>>> df87c20e382804fb37f90c030bc95c28ffffd909
       </section>
       <section class="gallery__grid">
         <div></div>
@@ -115,4 +96,3 @@ main {
   }
 }
 </style>
-@/api/ArtInstituteAPI
